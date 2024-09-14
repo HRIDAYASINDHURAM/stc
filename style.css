@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+  background: rgb(0, 0, 0);
+  background: url(IMG/stars.png);
+  font-family: "Poppins", sans-serif;
+}
+#preloader {
+  background: url(IMG/loading.gif) no-repeat center;
+  height:100%;
+  width:100%;
+  position: fixed;
+  z-index:9999999999999999999999999999999;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+::-webkit-scrollbar{
+  /* width:10px; */
+  display: none;
+}
+/* ::-webkit-scrollbar-thumb{
+  background-color:rgb(158, 158, 158);
+} */
+.navbar {
+  background: rgba(255, 255, 255, 0.145);
+  transition: background 0.3s ease, backdrop-filter 0.3s ease;
+  /* backdrop-filter: blur(4px); */
+}
+.navbar-scrolled {
+  background: rgba(85, 0, 255, 0.712);
+  backdrop-filter: blur(5px); 
+}
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+  outline: none;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.dropdown-menu {
+  background: rgb(255, 255, 255);
+}
+.dropdown-item:active,
+.dropdown-item:focus {
+  background: rgba(255, 255, 255, 0.369);
+}
+.cmpt {
+  width: 80%;
+  background: rgb(22, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(22, 0, 36, 1) 0%,
+    rgba(22, 7, 77, 1) 0%,
+    rgba(16, 27, 115, 1) 45%,
+    rgba(126, 42, 172, 1) 100%
+  );
+  border: 1px solid rgb(0, 8, 255);
+  box-shadow: 0 0 26px rgba(12, 12, 12, 0.5);
+  box-shadow: 0px 5px 14px 0px #454545;
+}
+.p {
+  margin-left:20%;
+  margin-right:20%;
+  text-align: center;
+}
+@media (max-width: 992px) {
+  .cmpt {
+    flex-direction: column;
+    width: 100%;
+  }
+  .cmpt h5,
+  .cmpt p {
+    text-align: center;
+  }
+  .bten {
+    margin-bottom: 10px;
+  }
+  .baten {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .dsk {
+    justify-content: center;
+    align-items: center;
+  }
+  .p {
+    margin-left:10%;
+    margin-right:10%;
+    text-align: justify;
+  }
+  .footer {
+    flex-direction: column-reverse;
+  }
+  .maps iframe {
+    width:100%;
+    height:100%;
+  }
+  .deskripsi h1, .deskripsi p {
+    text-align: center;
+    margin-left:2px;
+    margin-right:2px;
+  }
+  .bton {
+    justify-content: center;
+  }
+}
+.bten {
+  background: rgb(22, 0, 36);
+  background: rgb(0, 145, 189);
+  transition: 0.5s;
+  border-radius: 5px;
+  border:1px solid rgb(0, 4, 255);
+}
+.bten:hover {
+  background: blue;
+}
+.dsk {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.butonig {
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+  background: -webkit-linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4); /* Standard syntax */
+  font-size:30px;
+  border-radius:50%;
+  max-width:45px;
+}
+.butonwa {
+  background:green;
+  font-size:30px;
+  border-radius:50%;
+  max-width:45px;
+}
+.bton a{
+  text-decoration: none;
+  color:white;
+}
+.bton i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bton {
+  margin-left:10px;
+  display: flex;
+}
